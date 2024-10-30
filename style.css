@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 10px 15px #d41c0797;
+    padding: 30px;
+    justify-content: center;
+    display: absolute;
+    align-items: center;
+    width: 400px;
+    max-width: 500px;
+    min-width: auto;
+    max-height: fit-content;
+    min-height: auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #da4703;
+    font-stretch:narrower;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: normal;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #c73909ed;
+    margin: 5px;
+    font-family: monospace;
+    font-size: large;
+    transition: color 0.3s ease-in-out;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #a79a9a;
+    border-style: solid;
+    font-size: 16px;
+    font-family: monospace;
+    transition: all 0.4s ease; /* Menambahkan transisi untuk input */
+    margin: 5px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Placeholder style */
+  input::placeholder {
+    transition: font-size 0.4s ease, color 0.4s ease;
+    font-size: 14px; /* Ukuran font lebih besar saat tidak ada input */
+    color: #999;
+  }
+
+    input:focus{
+        border-color: orangered;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        transition-duration: 30ms;
+        transition-timing-function: ease-in-out;
+        justify-content: center;
+    }  
+  /* Placeholder mengecil saat input difokuskan */
+  input:focus::placeholder {
+    font-size: 12px; /* Placeholder mengecil saat user fokus ke input */
+    transition: font-size 0.4s ease, color 0.4s ease;
+    color: #666;
+  }
+  
+
+button{
+    padding: 10px 15px;
+    background-color: #ed7e00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    justify-content: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: normal;
+}
+
+button:hover{
+    background-color: #218838;
+    transition-duration: 30ms;
+    transition-timing-function: ease-in-out;
+    justify-content: center;
+}
+
+#result{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #e86b12;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: normal;
+    transition: color 0.3s ease-in-out;
+    justify-content: center;
+}
